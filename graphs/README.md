@@ -11,4 +11,4 @@
 - [Sediu](http://www.infoarena.ro/problema/sediu)
 - [Dominouri](http://www.infoarena.ro/problema/dominouri)
 - [Cezar](http://www.infoarena.ro/problema/cezar)
--[Maimute](http://www.infoarena.ro/problema/maimute)
+- [Maimute](http://www.infoarena.ro/problema/maimute)
