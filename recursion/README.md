@@ -4,6 +4,8 @@
 
 - [Modulo](http://www.infoarena.ro/problema/modulo)
 - [ClassicTask](http://www.infoarena.ro/problema/classictask)
+- [SumaDiv](http://varena.ro/problema/sumadiv)
+- [InVector](http://varena.ro/problema/invector)
 
 - [Google Recursion](https://www.google.ro/?gws_rd=cr,ssl&ei=nGX_Vo-bIMbXPOrIg-AO#q=recursion)
 - [Intr-o nu stiu care seara](https://www.youtube.com/watch?v=ezSD8F5zQqk)
