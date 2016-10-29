@@ -1,5 +1,8 @@
 #Recursivitate
 
+Selectie 2: 30 Oct Duminica 3 - 9
+Selectie 3: 4 Noi Vineri 6 - 9
+
 ##Probleme
 
 - [Modulo](http://www.infoarena.ro/problema/modulo)
