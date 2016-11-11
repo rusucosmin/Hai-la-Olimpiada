@@ -1,5 +1,10 @@
 #Clasa a X-a Liceu Mediu
 
+##
+- Cutia cu probleme:
+    - [Ecuatii2](http://www.infoarena.ro/problema/ecuatii2)
+    - [Ski](http://www.pbinfo.ro/?pagina=probleme&id=1048)
+
 - 08.10.2016
 
 - Creare grup Facebook
@@ -24,3 +29,14 @@
     - Rotire sir cu k pozitii
     - http://varena.ro/problema/rotk
     - Check whether a string contains duplicate characters. Can you do it in O(N) time and O(1) extra memory?
+
+- Test selectie 1:
+    - probleme adhoc de implementare si idee
+    - [link](http://www.infoarena.ro/runda/simulare_emag_mediu_2016_runda1)
+
+- Test selectie 2:
+    - stiva, coada, algoritmul lui lee
+
+- Test selectie 3:
+    - recursivitate, fill, backtracking
+
