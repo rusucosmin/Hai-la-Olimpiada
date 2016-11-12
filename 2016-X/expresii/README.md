@@ -13,6 +13,7 @@
     - [Queue](http://www.infoarena.ro/problema/queue)
     - [Egalitati](http://www.infoarena.ro/problema/egalitati)
     - [Parantezare](http://www.infoarena.ro/problema/parantezare)
+    - [Paranteze](http://www.infoarena.ro/problema/paranteze)
     - [Par](http://www.infoarena.ro/problema/par)
     - [Editor](http://www.infoarena.ro/problema/editor)
     - [Ecuatii2](http://www.infoarena.ro/problema/ecuatii2)
