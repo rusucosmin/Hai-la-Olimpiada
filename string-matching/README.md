@@ -1,5 +1,30 @@
 #Potrivirea sirurilor
 
+##Discutii 26-11-2016
+
+aba -> pattern of length N
+121(26)
+
+abdacadabdaaba -> text of length M
+12413141241121
+
+substringuri (hashcoduri)
+124
+231
+313
+131
+314
+412
+124
+241
+411
+112
+121 -> match
+
+
+O(M) subsiruri
+
+
 ##Discutii
 
 abac
