@@ -1,0 +1,43 @@
+dp[conf][i] =>  dp[conf + 2 ^ z][i + pas[z]]
+            => dp[conf + 2 & z][i - paz[z]]
+
+
+
+
+
+
+
+
+
+pentru fiecare configuratie conf (0, 2^P - 1) (conf):
+    pentru fiecare bit de 1 din configuratie (z)
+        pentru fiecare pozitie de la (0, N - 1) (i)
+            dp[conf][i] = max(dp[conf][i], dp[conf - 2 ^ z][i - jump[z]] + v[i]
+                                            dp[conf - 2 ^ z][i + jump[z] + v[i])
+
+afiseaza maximul de pe ultima linie a matricei
+
+
+
+
+
+
+
+
+
+7
+1 20 3 1 1 40 10
+3
+1 2 4
+
+conf:
+     0  1  2  3  4  5  6
+000  1 20  3  1  1 40 10
+001 21 23 23  4 41 50 50
+010  4 21  4 41 11 41 11
+011
+100
+101
+110
+111
+
