@@ -22,7 +22,7 @@ Pasi:
   }
   return x; // x (sau y) este lca-ul nodurilor initiale
   ```
-*Aparent ia 90 puncte pe infoarena*
+**Aparent ia 90 puncte pe infoarena!!**[sursa](https://www.infoarena.ro/job_detail/2120973)
 
 ## Smenul lui Batog
 [LCA in sqrt(N)](https://www.infoarena.ro/multe-smenuri-de-programare-in-cc-si-nu-numai)
@@ -41,9 +41,13 @@ dp[0][j] = tatal nodului j
 dp[i][j] = dp[i - 1][ dp[i - 1][j] ]
 ```
 Recurenta se traduce:
-`al 2^i lea stramos al lui j, este al 2^(i-1) lea stramos al celui de-al 2^(i-1) lea stramos a lui j`
-exemplu:
-`bunicul tau e tatal tatalui tau`
+```
+al 2^i lea stramos al lui j, este al 2^(i-1) lea stramos al celui de-al 2^(i-1) lea stramos a lui j
+```
+Exemplu:
+```
+bunicul tau e tatal tatalui tau
+```
 
 ```cpp
 for(int i = 1; (1 << i) <= n; ++ i) {
