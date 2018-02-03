@@ -48,12 +48,23 @@ Exemplu:
 ```
 bunicul tau e tatal tatalui tau
 ```
-
+Calcularea dinamicii
 ```cpp
 for(int i = 1; (1 << i) <= n; ++ i) {
   for(int j = 1; j <= n; ++ j) {
     dp[i][j] = dp[i - 1][ dp[i - 1][j] ];
   }
+}
+```
+Determinarea celui de-al `p`-lea stramos al lui `q`:
+```cpp
+int stramos(int p, int q) {
+  for(int bit = 0; (1 << bit) <= n; ++ bit) {
+    if(p & (1 << bit)) {
+      q = dp[bit][q];
+    }
+  }
+  return q;
 }
 ```
 
