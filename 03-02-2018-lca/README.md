@@ -22,7 +22,35 @@ Pasi:
   }
   return x; // x (sau y) este lca-ul nodurilor initiale
   ```
+*Aparent ia 90 puncte pe infoarena*
+
+## Smenul lui Batog
+[LCA in sqrt(N)](https://www.infoarena.ro/multe-smenuri-de-programare-in-cc-si-nu-numai)
 
 ## Programare dinamica
+### Stramosi
+[Stramosi](https://infoarena.ro/problema/stramosi)
+
+Determinarea celui de-al x-lea stramos al lui y in complexitate `O(log(N))`
+
+Dinamica:
+```
+dp[i][j] = al 2^i lea stramos al nodului j
+
+dp[0][j] = tatal nodului j
+dp[i][j] = dp[i - 1][ dp[i - 1][j] ]
+```
+Recurenta se traduce:
+`al 2^i lea stramos al lui j, este al 2^(i-1) lea stramos al celui de-al 2^(i-1) lea stramos a lui j`
+exemplu:
+`bunicul tau e tatal tatalui tau`
+
+```cpp
+for(int i = 1; (1 << i) <= n; ++ i) {
+  for(int j = 1; j <= n; ++ j) {
+    dp[i][j] = dp[i - 1][ dp[i - 1][j] ];
+  }
+}
+```
 
 ## RMQ
