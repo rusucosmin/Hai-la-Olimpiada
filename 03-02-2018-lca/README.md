@@ -67,5 +67,25 @@ int stramos(int p, int q) {
   return q;
 }
 ```
+### LCA cu smenul de la stramosi
+```cpp
+int lca(int x, int y) {
+  if (deep[x] < deep[y]) {
+    return lca(y, x);
+  }
+  // deep[x] > deep[y];
+  x = stramos(deep[x] - deep[y], x);
+  if(x == y) {
+    return x;
+  }
+  for(int k = maxk - 1; k >= 0; -- k) { // O(log2(N))
+    if(dp[k][x] != dp[k][y]) {
+      x = dp[k][x];
+      y = dp[k][y];
+    }
+  }
+  return dp[0][x];
+}
+```
 
 ## RMQ
