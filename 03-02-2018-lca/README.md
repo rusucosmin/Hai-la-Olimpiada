@@ -2,6 +2,9 @@
 
 [Lowest common ancestor](https://www.infoarena.ro/problema/lca)
 
+## Problema de interviu
+`Sa se determine cele mai imporatante K loguri ale unui server. Memorie O(K)`
+
 ## Brute
 Pasi:
   1. Aducem nodurile la aceeasi adancime
@@ -125,6 +128,36 @@ int RMQ(int x, int y) {
   return sol;
 }
 ```
+
+### LCA cu [RMQ](https://www.infoarena.ro/problema/rmq)
+
+```cpp
+int lca(int x, int y) {
+  x = fst[x];
+  y = fst[y];
+  if(x > y) {
+    swap(x, y);
+  }
+  int k = lg[y - x + 1];
+  int ind1 = rmq[k][x]; // [x, x + 2^k - 1]
+  int ind2 = rmq[k][y - (1 << k) + 1]; // [y - 2^k + 1,  y]
+  if(euler_lvl[ind1] < euler_lvl[ind2]) {
+    return euler[ind1];
+  } else {
+    return euler[ind2];
+  }
+}
+```
+
+## Probleme cu LCA
+
+* [CT](https://www.infoarena.ro/problema/ct)
+* [Atac](https://www.infoarena.ro/problema/atac)
+* [Pirati](https://www.infoarena.ro/problema/pirati)
+* [Concurs](https://www.infoarena.ro/problema/concurs)
+* [Delay](https://www.infoarena.ro/problema/delay)
+* [Radiatie](https://www.infoarena.ro/problema/radiatie)
+* [Ratina](https://www.infoarena.ro/problema/ratina)
 
 
 
