@@ -3,7 +3,7 @@
 ## Interview problems
 
 * In-place random shuffle an array.
-* Implement a queue using two stacks.
+* Implement a queue using two stacks. [queue](https://infoarena.ro/problema/queue)
 
 
 ## Matrix multiplication
